@@ -45,7 +45,7 @@ export default function Register() {
         {msg && <div className="text-sm">{msg}</div>}
         <div className="mt-3 flex items-center gap-2">
           <button className="btn btn-primary" disabled={submitting} type="submit">Crear cuenta</button>
-          <Link to="/login" className="btn">Acceder</Link>
+          <Link to="/login" className="btn btn-ghost">Acceder</Link>
         </div>
       </form>
     </div>

@@ -3,7 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../../state/auth/AuthContext";
 
 const LinkItem = ({ to, label }) => (
-  <NavLink to={to} className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>
+  <NavLink
+    to={to}
+    className={({ isActive }) =>
+      "nav-link" + (isActive ? " active" : "")
+    }
+  >
     {label}
   </NavLink>
 );

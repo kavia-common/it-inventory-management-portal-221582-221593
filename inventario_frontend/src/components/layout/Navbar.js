@@ -28,17 +28,17 @@ export default function Navbar() {
   return (
     <header className="app-header">
       <div className="flex items-center gap-3">
-        <span className="font-semibold">{title}</span>
+        <span className="font-semibold" style={{ fontSize: 16 }}>{title}</span>
       </div>
       <div className="flex items-center gap-2">
         {state?.user ? (
           <>
             <span className="text-sm text-muted">{state.user?.email}</span>
-            <button className="btn" onClick={actions.logout}>Salir</button>
+            <button className="btn btn-ghost" onClick={actions.logout}>Salir</button>
           </>
         ) : (
           <>
-            <Link className="btn" to="/login">Acceder</Link>
+            <Link className="btn btn-ghost" to="/login">Acceder</Link>
             <Link className="btn btn-primary" to="/register">Registro</Link>
           </>
         )}

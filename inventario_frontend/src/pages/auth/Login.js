@@ -44,7 +44,7 @@ export default function Login() {
         {error && <div className="text-sm" style={{ color: "var(--error)" }}>{error}</div>}
         <div className="mt-3 flex items-center gap-2">
           <button className="btn btn-primary" disabled={submitting} type="submit">Entrar</button>
-          <Link to="/register" className="btn">Crear cuenta</Link>
+          <Link to="/register" className="btn btn-ghost">Crear cuenta</Link>
         </div>
       </form>
     </div>

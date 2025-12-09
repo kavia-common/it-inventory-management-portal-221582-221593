@@ -29,8 +29,8 @@ export default function Metrics() {
       <h4>Evolución de stock y uso</h4>
       <ResponsiveContainer width="100%" height="90%">
         <LineChart data={data}>
-          <Line type="monotone" dataKey="stock" stroke="#3b82f6" />
-          <Line type="monotone" dataKey="uso" stroke="#06b6d4" />
+          <Line type="monotone" dataKey="stock" stroke="var(--primary)" />
+          <Line type="monotone" dataKey="uso" stroke="var(--success)" />
           <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
           <XAxis dataKey="name" />
           <YAxis />
